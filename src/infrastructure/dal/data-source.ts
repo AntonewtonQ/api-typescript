@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { UserEntity } from "infrastructure/dal/entities/UserEntity";
 import { DataSource } from "typeorm";
 

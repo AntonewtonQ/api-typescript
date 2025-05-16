@@ -10,7 +10,7 @@ AppDataSource.initialize().then(()=>{
 
     const userController = new UserController();
 
-    app.post("/users",(req,res) => userController.create(req,res));
+    app.post("/users",userController.create.bind);
 
     app.listen(3000, ()=> console.log("API running on port 3000"))
 })
